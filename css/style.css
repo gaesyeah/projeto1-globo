@@ -1,0 +1,243 @@
+/*EU FUI ADICIONANDO PEQUENAS BORDAS AOS POUCOS NAS DIVS PARA DEIXAR
+A PÁGINA IGUALZINHA A DO FIGMA, E ESSA ESPECIFICIDADE TODA ADICIONADA
+AOS POUCOS VAI DEIXAR A "BASE"(SEM ESSAS BORDAS) TODA BAGUNÇADA,
+O QUE PODE ATRAPALHAR A PARTE DO MEDIA QUERY
+obs: O MELHOR É USAR JUSTIFY CONTENT E ALIGN ITEMS.
+*/
+body {
+  background-color: white;
+  font-family: "Encode Sans", sans-serif;
+  /*Aplica o Encode Sans que eu importei no HTML em todo o body*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.full_page { /*div da página inteira e todo o seu conteudo*/
+  height: 1080px;
+  width: 1600px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.full_bar { /*div que inclui as divs .logo e a .bar_sec*/
+  height: 124px;
+  width: 1600px;
+  background-color: white;
+}
+.logo {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+.bar_sec {
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  border-bottom: 1px solid #F5F6F7;
+  border-top: 1px solid #F5F6F7;
+}
+/*---------------------------------------------------*/
+/*divs principais que dividem as .box1 e .box2*/
+
+.fullbox_left {
+  background-color: white;
+  height: 898px;
+  width: 693px;
+  margin-top: 21px;
+  border-right: 1px solid #EBEDEF;
+}
+.fullbox_right {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: white;
+  height: 914px;
+  width: 540px;
+  margin-top: 4px;
+  margin-left: 30px;
+}
+.fullbox_entire { /*div que agrupa as duas divs acima*/
+  margin-top: 6px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  height: 922px;
+  width: 1284px;
+  margin-right: -33px;
+}
+/*---------------------------------------------------*/
+.box1 { /*div que inclui as divs .box1_tit e .box1_desc*/
+  background-color: white(167, 167, 167);
+  height: 300px;
+  width: 648px;
+  border-bottom: 1px solid #EBEDEF;
+}
+.box1_tit {
+  width: 624px;
+  margin-top: 5px;
+  margin-bottom: 29px;
+  background-color:white;
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 67px;
+  letter-spacing: -0.01em;
+}
+.no_underline_link_red {
+  color: #C4160C;
+}
+.box1_desc {
+  width: 624px;
+  background-color:white;
+  color: #303134;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22.5px;
+  letter-spacing: -0.01em;
+}
+/*---------------------------------------------------*/
+  .box2_top {
+  background-color: white;
+  height: 291px;
+  width: 648px; 
+  display: flex;
+  border-bottom: 1px solid #EBEDEF;
+  margin-top: 12px;
+  justify-content: space-between;
+}
+.box2_down {
+  background-color: white;
+  height: 200px;
+  width: 648px;
+  display: flex;
+  margin-bottom: 23px;
+  justify-content: space-between;
+}
+.box2 { 
+  /*div que inclui as divs 
+  .box2_top -> .noticia_box2_img 
+  e 
+  .box2_down -> .noticia_box2*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: white;
+  height: 567px;
+  width: 648px;
+  margin-top: 10px;
+}
+.noticia_box2 {
+  background-color: white;
+  height: 200px;
+  width: 193px;
+  margin-top: -6px;
+}
+.noticia_box2_img {
+  background-color: white;
+  height: 270px;
+  width: 193px;
+}
+.img_box {
+  width: 100%; /*para a imagem se adaptar ao tamanho da div*/
+  border-radius: 12px;
+}
+.text1 {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: -0.02em;
+  color: #C4170C;
+  margin-top: 6px;
+}
+.text2 {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: -0.045em;
+  color: #2F3134;
+  margin-top: 6px;
+}
+.text3 {
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: -0.048em;
+  color: #2F3134;
+  margin-top: 15px;
+}
+/*---------------------------------------------------*/
+.box3_left { /*divs que estão dentro da div .fullbox_right*/
+  background-color: white;
+  width: 262px;
+  height: 850px;
+  margin-left: 15px;
+  margin-top: 22px;
+  border-right: 1px solid #EBEDEF;
+}
+.box3_right { /*divs que estão dentro da div .fullbox_right*/
+  background-color: white;
+  width: 240px;
+  height: 850px;
+  margin-top: 22px;
+}
+.noticia_box3_big {
+  margin-bottom: 32px;
+  width: 240px;
+  height: 296px;
+  background-color: white;
+}
+.noticia_box3_medium {
+  margin-bottom: 32px;
+  width: 240px;
+  height: 242px;
+  background-color: white;
+}
+.noticia_box3_small {
+  margin-bottom: 32px;
+  width: 240px;
+  height: 220px;
+  background-color: white;
+}
+.text1_green {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: -0.02em;
+  color: #16AE54;
+  margin-top: 6px;
+}
+.text1_yellow {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: -0.02em;
+  color: #EC8006;
+  margin-top: 6px;
+}
+.noticia_box3_big2 {
+  margin-top: 30px;
+  width: 240px;
+  height: 296px;
+  background-color: white;
+}
+.noticia_box3_medium2 {
+  margin-top: 18px;
+  width: 240px;
+  height: 242px;
+  background-color: white;
+}
